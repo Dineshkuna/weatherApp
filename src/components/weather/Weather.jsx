@@ -52,9 +52,9 @@ const Weather = () => {
                             
                             <p style={{fontSize : "30px", fontWeight: "bold"}}>{weather.name }, {weather.sys.country}</p>
                             <p style={ {fontSize : "20px", fontWeight: "bold" }}>temp : {weather.main.temp}</p>
-                            <p style={{}}>humidity : {weather.main.humidity
+                            <p style={{fontSize : "20px", marginLeft : "-20rem", paddingTop : "20px", fontStyle:"italic"}}>humidity : {weather.main.humidity
                             }%</p>
-                            <p>Wind Speed : {weather.wind.speed}</p>
+                            <p style={{fontSize : "20px", marginTop : "-50px", paddingLeft : "20rem", fontStyle:"italic" }}>Wind Speed : {weather.wind.speed}</p>
                             
                         </div>
                         
