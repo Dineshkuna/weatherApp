@@ -50,9 +50,9 @@ const Weather = () => {
                         <div>
                             
                             
-                            <p>{weather.name }, {weather.sys.country}</p>
-                            <p>temp : {weather.main.temp}</p>
-                            <p>humidity : {weather.main.humidity
+                            <p style={{fontSize : "30px", fontWeight: "bold"}}>{weather.name }, {weather.sys.country}</p>
+                            <p style={ {fontSize : "20px", fontWeight: "bold" }}>temp : {weather.main.temp}</p>
+                            <p style={{}}>humidity : {weather.main.humidity
                             }%</p>
                             <p>Wind Speed : {weather.wind.speed}</p>
                             
