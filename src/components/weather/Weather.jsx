@@ -35,7 +35,7 @@ const Weather = () => {
 
 
     return (
-        <div>
+        <div style={{backgroundColor : "bisque" , height : "100vh"}}>
             <div>
                 <Search
                 value = {search}
@@ -47,7 +47,17 @@ const Weather = () => {
             <div>
                 {
                     weather && weather.name ? (
-                        <p>{weather.name}</p>
+                        <div>
+                            
+                            
+                            <p>{weather.name }, {weather.sys.country}</p>
+                            <p>temp : {weather.main.temp}</p>
+                            <p>humidity : {weather.main.humidity
+                            }%</p>
+                            <p>Wind Speed : {weather.wind.speed}</p>
+                            
+                        </div>
+                        
                        
                         
                     ) : (
